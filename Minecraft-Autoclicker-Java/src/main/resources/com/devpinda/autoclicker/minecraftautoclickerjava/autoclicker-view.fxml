@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devpinda.autoclicker.minecraftautoclickerjava.AutoclickerController">
+    <children>
+        <Label fx:id="cpsLabel" layoutX="496.0" layoutY="24.0" prefHeight="213.0" prefWidth="465.0" style="-fx-text-fill: #F5F5F5;" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="Source Code Pro Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="clickRateLabel" alignment="CENTER_RIGHT" layoutY="24.0" prefHeight="213.0" prefWidth="465.0" style="-fx-text-fill: #F5F5F5;" text="Click rate:" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="Source Code Pro Bold" size="30.0" />
+            </font>
+        </Label>
+        <VBox fx:id="checkboxesVBox" layoutX="115.0" layoutY="333.0" prefHeight="87.0" prefWidth="731.0" spacing="5.0">
+            <CheckBox fx:id="leftClickCheckbox" mnemonicParsing="false" prefHeight="39.0" prefWidth="110.0" style="-fx-text-fill: #F5F5F5;" text="Left click">
+                <font>
+                    <Font name="Source Code Pro Bold" size="13.0" />
+                </font>
+            </CheckBox>
+            <CheckBox fx:id="rightClickCheckbox" mnemonicParsing="false" prefHeight="39.0" prefWidth="110.0" style="-fx-text-fill: #F5F5F5;" text="Right click">
+                <font>
+                    <Font name="Source Code Pro Bold" size="13.0" />
+                </font>
+            </CheckBox>
+        </VBox>
+        <Button fx:id="startButton" layoutX="354.0" layoutY="450.0" mnemonicParsing="false" onAction="#startClicker" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: #2E2E2E; -fx-text-fill: #F5F5F5;" text="Start (F6)">
+         <font>
+            <Font name="Source Code Pro Bold" size="15.0" />
+         </font></Button>
+        <Button fx:id="stopButton" layoutX="496.0" layoutY="450.0" mnemonicParsing="false" onAction="#stopClicker" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: #2E2E2E; -fx-text-fill: #F5F5F5;" text="Stop (F7)">
+         <font>
+            <Font name="Source Code Pro Bold" size="15.0" />
+         </font></Button>
+        <Slider fx:id="clickRateSlider" blockIncrement="1.0" layoutX="182.0" layoutY="251.0" majorTickUnit="1.0" max="20.0" minorTickCount="0" prefHeight="0.0" prefWidth="596.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+         <cursor>
+            <Cursor fx:constant="W_RESIZE" />
+         </cursor></Slider>
+    </children>
+</AnchorPane>
